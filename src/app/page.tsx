@@ -199,11 +199,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen bg-slate-50 dark:bg-slate-950 overflow-hidden relative">
+    <div className="flex flex-col lg:flex-row h-[100dvh] bg-slate-50 dark:bg-slate-950 overflow-hidden relative">
       {/* Chat Panel */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col min-h-0">
         {/* Header */}
-        <div className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3">
+        <div className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 shrink-0">
           <h1 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             Cognitive Mirror
           </h1>
@@ -263,7 +263,7 @@ export default function Home() {
       </div>
 
       {/* Live Sidebar */}
-      <div className="w-full lg:w-[400px] flex flex-col relative border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 h-[40vh] min-h-[300px] lg:h-full overflow-hidden">
+      <div className="w-full lg:w-[400px] flex flex-col relative border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 h-auto shrink-0 lg:h-full z-20 shadow-[-4px_0_15px_-3px_rgba(0,0,0,0.1)] lg:shadow-none">
         <LiveSidebar
           extraction={extraction}
           agents={agents}
