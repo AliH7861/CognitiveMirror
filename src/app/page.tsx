@@ -199,7 +199,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen bg-slate-50 dark:bg-slate-950 overflow-hidden">
+    <div className="flex flex-col lg:flex-row h-screen bg-slate-50 dark:bg-slate-950 overflow-hidden relative">
       {/* Chat Panel */}
       <div className="flex-1 flex flex-col">
         {/* Header */}
@@ -263,7 +263,7 @@ export default function Home() {
       </div>
 
       {/* Live Sidebar */}
-      <div className="w-full lg:w-[400px] flex flex-col relative border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 h-[50vh] lg:h-full">
+      <div className="w-full lg:w-[400px] flex flex-col relative border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 h-[40vh] min-h-[300px] lg:h-full overflow-hidden">
         <LiveSidebar
           extraction={extraction}
           agents={agents}
@@ -272,7 +272,7 @@ export default function Home() {
         />
 
         {dialogue.length > 0 && (
-          <div className="border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-4 max-h-[40%] overflow-y-auto">
+          <div className="flex-1 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-4 overflow-y-auto">
             <DialogueView dialogue={dialogue} />
           </div>
         )}
