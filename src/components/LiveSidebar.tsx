@@ -22,7 +22,7 @@ export default function LiveSidebar({
     const hasAgents = agents.length > 0;
 
     return (
-        <div className="w-full h-full bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 overflow-y-auto">
+        <div className="w-full h-full bg-white dark:bg-slate-900 overflow-y-auto">
             <div className="p-6 space-y-6">
                 {/* Header */}
                 <div>

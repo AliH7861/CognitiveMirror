@@ -199,7 +199,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="flex flex-col lg:flex-row h-screen bg-slate-50 dark:bg-slate-950 overflow-hidden">
       {/* Chat Panel */}
       <div className="flex-1 flex flex-col">
         {/* Header */}
@@ -263,7 +263,7 @@ export default function Home() {
       </div>
 
       {/* Live Sidebar */}
-      <div className="w-[400px] flex flex-col relative">
+      <div className="w-full lg:w-[400px] flex flex-col relative border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 h-[50vh] lg:h-full">
         <LiveSidebar
           extraction={extraction}
           agents={agents}
